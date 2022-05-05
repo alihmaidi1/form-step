@@ -1,0 +1,164 @@
+body {
+    background: linear-gradient(to left, rgb(255, 13, 203), rgb(95, 21, 192));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: #fff;
+    width: 320px;
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+    margin: 100px auto;
+}
+
+.form-outer {
+    width: 400%;
+    display: flex;
+    position: relative;
+    left: 0%;
+    transition: all .5s ease;
+}
+
+.page {
+    width: 25%;
+    text-align: start;
+    margin: 20px;
+}
+
+.page-title {
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.712);
+    margin-bottom: 20px;
+}
+
+.label {
+    text-align: start;
+    font-weight: 700;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.664);
+}
+
+.input-style {
+    width: 93%;
+    height: 30px;
+    margin-bottom: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    border-radius: 3px 3px;
+}
+
+.button-form {
+    width: 97%;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+    height: 36px;
+    background: rgb(235, 4, 112);
+    color: #fff;
+    border-radius: 3px 3px;
+}
+
+.button-form:hover {
+    background: #000;
+    transition: all .6s ease;
+}
+
+.btn-flex {
+    display: flex;
+}
+
+.progress {
+    display: flex;
+    margin: 20px;
+}
+
+.step {
+    width: 25%;
+}
+
+.counter-form {
+    border: 1px solid #000;
+    width: 25px;
+    display: inline-block;
+    height: 25px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.counter-form.active {
+    color: #fff;
+    background: rgb(243, 0, 203);
+    border: 1px solid rgb(243, 0, 203);
+}
+
+.test-step {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.test-step.active {
+    color: rgb(194, 0, 194);
+}
+
+.counter-form::after,
+.counter-form::before {
+    content: "";
+    width: 44px;
+    background: #000;
+    height: 3px;
+    top: 10px;
+    left: 25px;
+    position: absolute;
+    background: rgb(31, 0, 26);
+}
+
+.counter-form.active::after,
+.counter-form.active::before {
+    content: "";
+    width: 0px;
+    background: #000;
+    height: 3px;
+    top: 10px;
+    left: 25px;
+    position: absolute;
+    background: rgb(230, 23, 195);
+    animation: changebackground 1s ease forwards;
+}
+
+@keyframes changebackground {
+    100% {
+        width: 45px;
+    }
+}
+
+.progress .step:last-child .counter-form::after,
+.progress .step:last-child .counter-form::before {
+    display: none;
+}
+
+.check {
+    position: absolute;
+    left: 28px;
+    top: -28px;
+    display: none;
+}
+
+.check.active {
+    display: block;
+    color: #fff;
+}
+
+.absolute {
+    position: relative;
+}
+
+.text-counter {
+    display: inline;
+}
+
+.text-counter.active {
+    display: none;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+    <form>
+        <div class="container">
+            <h2>Signup Form</h2>
+
+            <div class="progress">
+
+                <div class="step">
+                    <div class="test-step">Name</div>
+                    <div>
+                        <span class="counter-form"><span class="text-counter">1</span></span>
+                    </div>
+                    <div class="absolute">
+
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="test-step">Contact</div>
+                    <div>
+                        <span class="counter-form"><span class="text-counter">2</span></span>
+                    </div>
+                    <div class="absolute">
+
+                        <div class="check "><i class="fas fa-check"></i></div>
+                    </div>
+
+                </div>
+                <div class="step">
+                    <div class="test-step">Date</div>
+                    <div>
+                        <span class="counter-form"><span class="text-counter">3</span></span>
+                    </div>
+                    <div class="absolute">
+                        <div class="check "><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="test-step">login</div>
+
+                    <div>
+                        <span class="counter-form">4</span>
+                    </div>
+                    <div class="absolute">
+                        <div class="check"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="container-padding">
+                <div id="outer" class="form-outer">
+                    <!-- page 1 -->
+                    <div id="page1" class="page">
+
+                        <div class="page-title">Basic Info :</div>
+
+                        <div class="label">First Name</div>
+                        <input class="input-style" type="text" />
+                        <div class="label">Last Name</div>
+                        <input class="input-style" type="text" />
+                        <div class="btn-flex">
+                            <button type="button" id="btn-page1" class="button-form">Next</button>
+                        </div>
+                    </div>
+
+
+                    <!-- page 2  -->
+                    <div id="page2" class="page">
+
+                        <div class="page-title"> Contact Info :</div>
+                        <div class="label">E-mail Address</div>
+                        <input class="input-style" type="email" />
+                        <div class="label">Number</div>
+                        <input class="input-style" type="number" />
+                        <div class="btn-flex">
+                            <button type="button" id="btn-page2-previous" class="button-form">Previous</button>
+                            <button type="button" id="btn-page2-next" class="button-form">Next</button>
+                        </div>
+                    </div>
+
+
+                    <!-- page 3 -->
+                    <div class="page">
+
+                        <div class="page-title">Date of Birth :</div>
+
+                        <div class="label">Date</div>
+                        <input class="input-style" type="text" />
+                        <div class="label">Gender</div>
+                        <select class="input-style">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Not select</option>
+                </select>
+                        <div class="btn-flex">
+                            <button type="button" id="btn-page3-preious" class="button-form">Previous</button>
+                            <button type="button" id="btn-page3-next" class="button-form">Next</button>
+                        </div>
+                    </div>
+
+
+                    <!-- page 4 -->
+                    <div class="page">
+
+                        <div class="page-title">Login Details :</div>
+
+                        <div class="label">UserName</div>
+                        <input class="input-style" type="text" />
+                        <div class="label">Password</div>
+                        <input class="input-style" />
+                        <div class="btn-flex">
+                            <button type="button" id="btn-page4-previous" class="button-form">Previous</button>
+                            <button type="submit" class="button-form">Submit</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+<script src="./js/index.js"></script>
+
+</html>
